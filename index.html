@@ -9,10 +9,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button class="reset">Reset the grid</button>
-        <div class="container">
-
+        <div class="col1">
+            <h1>Etch a sketch</h1>
+            <p>Here is a preset grid of 16 x 16 pixels where you can draw. Use the buttons at the bottom to clear the grid or even create a new one with another number of pixels if you like (max 100 cases per side).</p>
+            <div class="modes">
+                <div class="mode">
+                    <input type="radio" name="mode" id="black" value="black" checked>
+                    <label for="black">Black mode</label>
+                </div>
+                <div class="mode">
+                    <input type="radio" name="mode" id="greyScale" value="greyScale">
+                    <label for="greyScale">Grey scale darkening mode</label>
+                </div>
+                <div class="mode">
+                    <input type="radio" name="mode" id="rainbow" value="rainbow">
+                    <label for="rainbow">Rainbow random coloring mode</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="reset">Create a new grid size</button>
+                <button class="clear">Clear the grid</button>
+            </div>
         </div>
+
+        <div class="col2">
+            <div class="container"></div>    
+        </div>
+        
         <script src="javascript.js" async defer></script>
     </body>
 </html>
